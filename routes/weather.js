@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
   const data = await fetch(
     `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.OWM_API_KEY}&units=metric`
   );
-  res.json({ result: true, currentPosWeather: processOpenWeatherData(await data.json()) });
+  res.json({ weather: await City.find(), currentPosWeather: processOpenWeatherData(await data.json()) });
 });
 
 router.post('/', (req, res) => {
