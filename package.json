@@ -1,0 +1,30 @@
+{
+  "name": "weatherapp-part4-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "watch": "nodemon ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MRcraigchick/weatherapp-part4-backend.git"
+  },
+  "dependencies": {
+    "chalk": "4.1.2",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.1",
+    "express": "~4.16.1",
+    "geoip-lite": "^1.4.6",
+    "mongoose": "^6.3.1",
+    "morgan": "~1.9.1",
+    "node-fetch": "2"
+  },
+  "devDependencies": {
+    "jest": "^28.0.1",
+    "jsdom": "^19.0.0",
+    "supertest": "^6.2.3"
+  }
+}
